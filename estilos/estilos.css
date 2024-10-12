@@ -1,0 +1,116 @@
+.padre{
+    padding: 10px;
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-areas: 
+    "cab cab cab"
+    "nav nav nav"
+    "cont1 cont2 cont3"
+    "cont4 cont4 cont4"
+    "hr hr hr"
+    "va ft va2"
+    "di cont soc"
+    "foot foot foot" 
+    ;
+}
+
+.padre .header{
+    background: linear-gradient(#348bb9,#28bbd4);
+    border-radius: 10px;
+    grid-area: cab;
+}
+/*.nom{
+    position: relative;
+    left: 50px;
+}*/
+.padre .nav{
+    grid-area: nav;
+}
+.padre .cont1{
+    grid-area: cont1;
+}
+.padre .cont2{
+    
+    grid-area: cont2;
+}
+.padre .cont3{
+    align-items: center;
+    justify-content: center;
+    grid-area: cont3;
+}
+.padre .cont4{
+    /*position: relative;
+    left: 100px;*/
+    grid-area: cont4;
+}
+.padre .logos{
+    justify-content: center;
+    grid-area: ft;
+    display: flex;
+    flex-direction: row;
+}
+.padre .hr{
+    grid-area: hr;
+}
+.padre .logos img{
+    height: 60px;
+    padding:10px;
+}
+.padre .vacio{
+    grid-area: va;
+}
+.padre .vacio2{
+    grid-area: va2;
+}
+.padre .disenio{
+    grid-area: di;
+}
+.padre .cont{
+    grid-area: cont;
+}
+.padre .social{
+    grid-area: soc;
+}
+.padre .footer{
+    grid-area: foot;
+    
+}
+
+/*.logos img{
+    height: 60px;
+    padding-left: 20px;
+}
+.padre .footer .inicio .logos{
+   
+grid-area: si;
+
+}
+
+.padre .footer .inicio{
+    border-radius: 10px;
+    grid-area: ini;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-areas: "no si no";
+}
+.padre .footer .pie{
+    align-items: center;
+    grid-area: pie;
+    height: 120px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-areas: "di con so";
+}
+.padre .footer .pie .disenio{
+    grid-area: di;
+}
+.padre .footer .pie .cont{
+    griarea: con;
+}
+.padre .footer .pie .social{
+    grid-area: so;
+}
+.padre .footer .fin{
+    grid-area: fin;
+}*/

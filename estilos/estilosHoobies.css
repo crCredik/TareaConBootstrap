@@ -1,0 +1,72 @@
+.padre{
+    padding: 10px;
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-areas:
+    "cab cab"
+    "nav nav"
+    "cont1 cont2"
+    "cont1 cont2"
+    "cont3 cont3"
+    "hr hr"
+    "di ft"
+    "soc cont"
+    "foot foot" 
+
+    ;
+}
+.padre .header{
+    background-color: blanchedalmond;
+    border-radius: 10px;
+    grid-area: cab;
+    justify-content: center;
+}
+
+.padre .nav{
+    grid-area: nav;
+}
+.padre .cont1{
+    justify-content: center;
+    grid-area: cont1;
+}
+.padre .cont2{
+    justify-content: center;
+    grid-area: cont2;
+}
+.padre .cont3{
+    grid-area: cont3;
+}
+.padre .logos{
+    justify-content: center;
+    grid-area: ft;
+    display: flex;
+    flex-direction: row;
+}
+.padre .hr{
+    grid-area: hr;
+}
+.padre .logos img{
+    height: 60px;
+    padding:10px;
+}
+.padre .vacio{
+    grid-area: va;
+}
+.padre .vacio2{
+    grid-area: va2;
+}
+.padre .disenio{
+    grid-area: di;
+}
+.padre .cont{
+    justify-content: center;
+    grid-area: cont;
+}
+.padre .social{
+    grid-area: soc;
+}
+.padre .footer{
+    grid-area: foot;
+    
+}
